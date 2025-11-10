@@ -1,7 +1,7 @@
 import cv2
 from ultralytics import YOLO
 
-def run_live_segmentation(model_path='best (1).pt', source=0):
+def run_live_segmentation(model_path='trash-detector-1.pt', source=0):
     """
     Performs live instance segmentation using a YOLO model.
 
@@ -10,7 +10,7 @@ def run_live_segmentation(model_path='best (1).pt', source=0):
         source (int or str): Video source. 0 for webcam, or a path to a video file.
     """
     # Load the YOLO segmentation model
-    model = YOLO("./best (1).pt")
+    model = YOLO("./trash-detector-1.pt")
 
     # Open the video source
     cap = cv2.VideoCapture(source)
@@ -47,4 +47,4 @@ if __name__ == "__main__":
     # Example usage:
     # Use 'yolov8n-seg.pt' for a nano-sized segmentation model
     # Use 0 for the default webcam, or provide a video file path like 'path/to/your/video.mp4'
-    run_live_segmentation(model_path='./best (1).pt', source=0)
+    run_live_segmentation(model_path='./trash-detector-1.pt', source=0)
