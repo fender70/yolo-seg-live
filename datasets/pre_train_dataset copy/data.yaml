@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 18
+names: ['aluminum', 'cardboard', 'egg shell', 'facemask', 'food wrapper', 'fruit peels', 'glass bottle', 'left-over food', 'paper', 'plastic bag', 'plastic bottle', 'plastic container', 'plastic sachet', 'plastic straw', 'styrofoam containers', 'treeleaves', 'uht carton', 'vegetable peels']
+
+roboflow:
+  workspace: cedric-uibnw
+  project: merged-dzqq2-qml0n
+  version: 4
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/cedric-uibnw/merged-dzqq2-qml0n/dataset/4
